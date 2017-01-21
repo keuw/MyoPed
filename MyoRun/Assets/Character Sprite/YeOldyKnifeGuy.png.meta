@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 1012b78bfeb46704c8caf17d4019fa6f
-timeCreated: 1485023891
+timeCreated: 1485033489
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: YeOldyKnifeGuy_0
+    21300002: YeOldyKnifeGuy_1
+    21300004: YeOldyKnifeGuy_2
+    21300006: YeOldyKnifeGuy_3
+    21300008: YeOldyKnifeGuy_4
+    21300010: YeOldyKnifeGuy_5
+    21300012: YeOldyKnifeGuy_6
+    21300014: YeOldyKnifeGuy_7
+    21300016: YeOldyKnifeGuy_8
+    21300018: YeOldyKnifeGuy_9
+    21300020: YeOldyKnifeGuy_10
+    21300022: YeOldyKnifeGuy_11
+    21300024: YeOldyKnifeGuy_12
+    21300026: YeOldyKnifeGuy_13
+    21300028: YeOldyKnifeGuy_14
+    21300030: YeOldyKnifeGuy_15
+    21300032: YeOldyKnifeGuy_16
+    21300034: YeOldyKnifeGuy_17
+    21300036: YeOldyKnifeGuy_18
+    21300038: YeOldyKnifeGuy_19
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -58,9 +78,277 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 106
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 106
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 106
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 106
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 78
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 78
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 78
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 78
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_12
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_13
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 22
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_17
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 22
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 22
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: YeOldyKnifeGuy_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 22
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
