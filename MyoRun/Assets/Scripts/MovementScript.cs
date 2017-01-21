@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using LockingPolicy = Thalmic.Myo.LockingPolicy;
+using Pose = Thalmic.Myo.Pose;
+using UnlockType = Thalmic.Myo.UnlockType;
+using VibrationType = Thalmic.Myo.VibrationType;
+
 public class MovementScript : MonoBehaviour {
     public GameObject myo = null;
 
@@ -13,6 +18,7 @@ public class MovementScript : MonoBehaviour {
     private Rigidbody2D rig;
     private Collider2D playerCollider;
     // Use this for initialization
+
     void Start () {
 		rig = GetComponent<Rigidbody2D> ();
         playerCollider = GetComponent<Collider2D>();
@@ -21,8 +27,11 @@ public class MovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		// Access the ThalmicMyo component attached to the Myo game object.
+		ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo> ();
+
         rig.velocity = new Vector2(speed, rig.velocity.y);
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+		if (Input.GetKeyDown(KeyCode.UpArrow) || thalmicMyo.pose == Pose.DoubleTap)
         {
             if (grounded)
             {
