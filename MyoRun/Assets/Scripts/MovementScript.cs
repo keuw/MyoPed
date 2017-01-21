@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementScript : MonoBehaviour {
-	public float speed ;
+    public GameObject myo = null;
+
+    public float speed ;
 	public float jumpPower;
 
 	public bool grounded;
