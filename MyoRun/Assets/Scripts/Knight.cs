@@ -8,7 +8,7 @@ public class Knight : MonoBehaviour {
     public bool atGoal;
     public bool winMove;
 
-    public float enterWait = 3;
+    public float enterWait = 2;
 
     // Use this for initialization
     void Start () {
@@ -24,10 +24,10 @@ public class Knight : MonoBehaviour {
         string dum = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
 
         if (playerTrans.position.x <= -1) {
-            if (dum.Equals("LevelScene")) {
+            if (dum.Equals("LeverScene")) {
                 playerAnimator.SetInteger("AnimationState", 1);
             }
-            playerTrans.Translate(-Time.deltaTime*3, 0, 0);
+            playerTrans.Translate(Time.deltaTime*3, 0, 0);
         }
         else
         {
@@ -35,7 +35,7 @@ public class Knight : MonoBehaviour {
             if (winMove == false)
             {
                 atGoal = true;
-                if (dum.Equals("LevelScene"))
+                if (dum.Equals("LeverScene"))
                 {
                     playerAnimator.SetInteger("AnimationState", 1);
                 }
@@ -47,15 +47,15 @@ public class Knight : MonoBehaviour {
             if (enterWait > 0)
             {
                 enterWait -= Time.deltaTime;
-                if (dum.Equals("LevelScene"))
+                if (dum.Equals("LeverScene"))
                 {
                     playerAnimator.SetInteger("AnimationState", 1);
                 }
             }
             else
             {
-                playerTrans.Translate(-Time.deltaTime * 3, 0, 0);
-                if (dum.Equals("LevelScene"))
+                playerTrans.Translate(Time.deltaTime * 3, 0, 0);
+                if (dum.Equals("LeverScene"))
                 {
                     playerAnimator.SetInteger("AnimationState", 1);
                 }

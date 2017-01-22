@@ -12,13 +12,17 @@ public class LeverHandler : MonoBehaviour {
     public Knight knight;
     public Lever lever;
     public Bridge bridge;
+    public Fist fist;
+    public Arrow arrow;
+    
     private Animator bridgeAnim;
+    private Animator fistAnim;
+    private Animator arrowAnim;
 
-    public int animationState = 0;
-
+    public bool win;
+    
 	public double pastVal = -1.0;
-
-    public int eventSet = 0;
+    
     // Use this for initialization
     void Start () {
 
@@ -26,6 +30,8 @@ public class LeverHandler : MonoBehaviour {
         horizontalSize = verticalSize * Screen.width / Screen.height;
 
         bridgeAnim = bridge.GetComponent<Animator>();
+        fistAnim = fist.GetComponent<Animator>();
+        arrowAnim = arrow.GetComponent<Animator>();
 
         for (int i = 0; i < 20; i++)
         {
@@ -39,7 +45,7 @@ public class LeverHandler : MonoBehaviour {
     void Update()
     {
         
-		if (UserControls.samePose (Pose.Fist) && knight.atGoal == true) {
+		if (Input.GetKeyDown(KeyCode.UpArrow) && knight.atGoal == true) {
 			if (pastVal == -1.0) {
 				pastVal = UserControls.getHeight ();
 			} else if (pastVal - UserControls.getHeight () > 0.4) {
@@ -62,6 +68,16 @@ public class LeverHandler : MonoBehaviour {
         if (knight.playerTrans.position.x >= 10)
         {
 			GameScript.won = true;
+        }
+        if (knight.atGoal == true && knight.winMove == false)
+        {
+            fistAnim.Play("Fist");
+            arrowAnim.Play("Arrow");
+        }
+        if(knight.winMove == true)
+        {
+            fistAnim.Play("Fist_Idle");
+            arrowAnim.Play("Arrow_Idle");
         }
     }
 
