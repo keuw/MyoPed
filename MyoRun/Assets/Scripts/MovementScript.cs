@@ -29,8 +29,8 @@ public class MovementScript : MonoBehaviour {
 
 		// Access the ThalmicMyo component attached to the Myo game object.
 		ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo> ();
-
-        rig.velocity = new Vector2(speed, rig.velocity.y);
+		float movement = Input.GetAxis ("Horizontal");
+		rig.velocity = new Vector2(speed * movement, rig.velocity.y);
 		if (Input.GetKeyDown(KeyCode.UpArrow) || thalmicMyo.pose == Pose.DoubleTap)
         {
             if (grounded)
