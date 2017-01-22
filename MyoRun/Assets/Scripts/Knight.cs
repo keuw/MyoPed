@@ -21,9 +21,12 @@ public class Knight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        string dum = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
 
         if (playerTrans.position.x <= -1) {
-            playerAnimator.SetInteger("AnimationState", 1);
+            if (dum.Equals("LevelScene")) {
+                playerAnimator.SetInteger("AnimationState", 1);
+            }
             playerTrans.Translate(-Time.deltaTime*3, 0, 0);
         }
         else
@@ -32,8 +35,10 @@ public class Knight : MonoBehaviour {
             if (winMove == false)
             {
                 atGoal = true;
-                playerAnimator.SetInteger("AnimationState", 2);
-                
+                if (dum.Equals("LevelScene"))
+                {
+                    playerAnimator.SetInteger("AnimationState", 1);
+                }
             }
         }
         
@@ -42,12 +47,18 @@ public class Knight : MonoBehaviour {
             if (enterWait > 0)
             {
                 enterWait -= Time.deltaTime;
-                playerAnimator.SetInteger("AnimationState", 0);
+                if (dum.Equals("LevelScene"))
+                {
+                    playerAnimator.SetInteger("AnimationState", 1);
+                }
             }
             else
             {
                 playerTrans.Translate(-Time.deltaTime * 3, 0, 0);
-                playerAnimator.SetInteger("AnimationState", 1);
+                if (dum.Equals("LevelScene"))
+                {
+                    playerAnimator.SetInteger("AnimationState", 1);
+                }
             }
         }
 

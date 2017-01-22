@@ -8,16 +8,18 @@ public class Boss_Handler : MonoBehaviour
     private float horizontalSize;
 
 
-    public Knight_Boss knight;
+    public Knight knight;
     public Sword sword;
     public Spider spider;
+    public Circle circle;
     private Animator spiderAnim;
     private Animator knightAnim;
     private Animator swordAnim;
-
+    private Animator circleAnim;
 
     public bool win;
     
+
     // Use this for initialization
     void Start()
     {
@@ -26,6 +28,7 @@ public class Boss_Handler : MonoBehaviour
         spiderAnim = spider.GetComponent<Animator>();
         knightAnim = knight.GetComponent<Animator>();
         swordAnim = sword.GetComponent<Animator>();
+        circleAnim = circle.GetComponent<Animator>();
 
     }
 
@@ -35,9 +38,10 @@ public class Boss_Handler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            knightAnim.Play("Knight_Boss_Jump");
-            swordAnim.Play("Sword_Grab");
-
+            knightAnim.SetInteger("JumpState", 1);
+            swordAnim.SetInteger("DropState", 1);
+            circleAnim.SetInteger("ExpandCircle", 1);
+            
         }
     }
 
