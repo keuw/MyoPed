@@ -45,7 +45,7 @@ public class LeverHandler : MonoBehaviour {
     void Update()
     {
         
-		if (UserControls.samePose (Pose.Fist) && knight.atGoal == true) {
+		if (Input.GetKeyDown(KeyCode.UpArrow) && knight.atGoal == true) {
 			if (pastVal == -1.0) {
 				pastVal = UserControls.getHeight ();
 			} else if (pastVal - UserControls.getHeight () > 0.4) {

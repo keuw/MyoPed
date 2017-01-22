@@ -24,7 +24,7 @@ public class Knight : MonoBehaviour {
 
         if (playerTrans.position.x <= -1) {
             playerAnimator.SetInteger("AnimationState", 1);
-            playerTrans.Translate(-Time.deltaTime*3, 0, 0);
+            playerTrans.Translate(Time.deltaTime*3, 0, 0);
         }
         else
         {
@@ -46,7 +46,7 @@ public class Knight : MonoBehaviour {
             }
             else
             {
-                playerTrans.Translate(-Time.deltaTime * 3, 0, 0);
+                playerTrans.Translate(Time.deltaTime * 3, 0, 0);
                 playerAnimator.SetInteger("AnimationState", 1);
             }
         }
