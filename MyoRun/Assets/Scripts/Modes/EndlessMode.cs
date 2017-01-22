@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndlessMode : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+public class EndlessMode : Mode {
+
+	public override string getEvent(){
+		int n = UnityEngine.Random.Range(0, events.Length);
+		return events[n];
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+
+	public override bool isFinished(){
+		return false;
 	}
 }
