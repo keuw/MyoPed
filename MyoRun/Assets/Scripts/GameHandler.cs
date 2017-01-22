@@ -25,9 +25,9 @@ public class GameHandler : MonoBehaviour {
         minY = verticalSize - (float)mapY / 2.0f;
         maxY = (float)mapY / 2.0f - verticalSize;
 
-        for (int i = 0; i < 25; i++)
+        for (int i = 0; i < 15; i++)
         {
-            Instantiate(block, new Vector3((i * 1f), minY, 0),Quaternion.identity);
+            Instantiate(block, new Vector3((i * 1f)-horizontalSize, 0- verticalSize+0.95f, 0),Quaternion.identity);
         }
 	}
 	
