@@ -22,7 +22,7 @@ public class PlatformGenerator : MonoBehaviour {
         {
             transform.position = new Vector3(transform.position.x + platformWidth + distanceBetween, transform.position.y, transform.position.z);
 
-            Instantiate(thePlatform, transform.position, Transform.rotation);
+            Instantiate(thePlatform, transform.position, transform.rotation);
         }
 	}
 }
