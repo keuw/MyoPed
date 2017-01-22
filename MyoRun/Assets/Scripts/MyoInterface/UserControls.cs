@@ -13,15 +13,22 @@ public class UserControls : MonoBehaviour{
 
 	public static ThalmicMyo thMyo;
 
+	public static float y;
+
 	void Start(){
 		DontDestroyOnLoad(transform.gameObject);
 	}
 
 	void Update(){
 		thMyo = myo.GetComponent<ThalmicMyo> ();
+		y = myo.transform.forward.y;
 	}
 
 	public static bool samePose(Pose pose){
 		return pose == thMyo.pose;
+	}
+
+	public static double getHeight(){
+		return y;
 	}
 }

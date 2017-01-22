@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameHandler : MonoBehaviour {
+using Pose = Thalmic.Myo.Pose;
+
+public class LeverHandler : MonoBehaviour {
     private float verticalSize;
     private float horizontalSize;
 
@@ -12,16 +14,13 @@ public class GameHandler : MonoBehaviour {
     public Bridge bridge;
     private Animator bridgeAnim;
 
-
-    public bool win;
-
     public int animationState = 0;
 
+	public double pastVal = -1.0;
 
     public int eventSet = 0;
     // Use this for initialization
     void Start () {
-        win = false;
 
         verticalSize = Camera.main.orthographicSize;
         horizontalSize = verticalSize * Screen.width / Screen.height;
@@ -40,12 +39,18 @@ public class GameHandler : MonoBehaviour {
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space) && knight.atGoal == true)
-        {
-            lever.GetComponent<SpriteRenderer>().color = new Color(0, 0, 255);
-            knight.winMove = true;
+		if (UserControls.samePose (Pose.Fist) && knight.atGoal == true) {
+			if (pastVal == -1.0) {
+				pastVal = UserControls.getHeight ();
+			} else if (pastVal - UserControls.getHeight () > 0.4) {
+				lever.GetComponent<SpriteRenderer> ().color = new Color (0, 0, 255);
+				knight.winMove = true;
+			}
             
-        }
+		} else {
+			pastVal = -1.0;
+		}
+
         if (knight.winMove == true)
         {
             if (knight.enterWait > 0)
@@ -56,7 +61,7 @@ public class GameHandler : MonoBehaviour {
         }
         if (knight.playerTrans.position.x >= 10)
         {
-            win = true;
+			GameScript.won = true;
         }
     }
 

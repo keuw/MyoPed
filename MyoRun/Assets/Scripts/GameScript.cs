@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameScript{
+using Pose = Thalmic.Myo.Pose;
+
+public class GameScript : MonoBehaviour{
 
 	public static bool won = false;
 
@@ -13,7 +15,7 @@ public class GameScript{
 
 	// Use this for initialization
 	void Start () {
-		
+		DontDestroyOnLoad (transform.gameObject);
 	}
 	
 	// Update is called once per frame
@@ -28,5 +30,12 @@ public class GameScript{
 				won = false;
 			}
 		}
+		if (UserControls.samePose (Pose.DoubleTap)) {
+			if(!mode.isFinished()){
+				SceneManager.LoadScene(mode.getEvent());
+			}
+			Debug.Log ("SamePose");
+		}
+		Debug.Log ("Update");
 	}
 }
