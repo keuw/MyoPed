@@ -17,11 +17,14 @@ public class MovementScript : MonoBehaviour {
 
     private Rigidbody2D rig;
     private Collider2D playerCollider;
+
+    private Animator playerAnimator;
     // Use this for initialization
 
     void Start () {
 		rig = GetComponent<Rigidbody2D> ();
         playerCollider = GetComponent<Collider2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -38,6 +41,9 @@ public class MovementScript : MonoBehaviour {
                 rig.velocity = new Vector2(rig.velocity.x, jumpPower);
             }
         }
+
+        playerAnimator.SetFloat("Speed", rig.velocity.x);
+        playerAnimator.SetBool("Grounded", grounded);
       
     }
 
