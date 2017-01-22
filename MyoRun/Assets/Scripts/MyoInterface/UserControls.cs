@@ -13,7 +13,9 @@ public class UserControls : MonoBehaviour{
 
 	public static ThalmicMyo thMyo;
 
-	public static float y;
+	public static double y;
+
+	public static string downfist = "0.785", upfist = "0.6512";
 
 	void Start(){
 		DontDestroyOnLoad(transform.gameObject);

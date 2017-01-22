@@ -37,7 +37,7 @@ public class Knight : MonoBehaviour {
                 atGoal = true;
                 if (dum.Equals("LeverScene"))
                 {
-                    playerAnimator.SetInteger("AnimationState", 1);
+                    playerAnimator.SetInteger("AnimationState", 2);
                 }
             }
         }

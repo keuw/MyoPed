@@ -21,16 +21,16 @@ public class GameScript : MonoBehaviour{
 	// Update is called once per frame
 	void Update () {
 		if (won) {
-			if (boss) {
-				SceneManager.LoadScene ("Win Screen");
-			} else if (mode.isFinished ()) {
-				SceneManager.LoadScene (mode.getBoss ());
-			} else {
-				SceneManager.LoadScene(mode.getEvent());
-				won = false;
-			}
+			SceneManager.LoadScene ("MainMenu");
+			won = false;
 		}
 		if (UserControls.samePose (Pose.DoubleTap)) {
+			if(!mode.isFinished()){
+				SceneManager.LoadScene(mode.getBoss());
+			}
+			Debug.Log ("SamePose");
+		}
+		if (UserControls.samePose (Pose.Fist)) {
 			if(!mode.isFinished()){
 				SceneManager.LoadScene(mode.getEvent());
 			}

@@ -45,13 +45,15 @@ public class LeverHandler : MonoBehaviour {
     void Update()
     {
         
-		if (Input.GetKeyDown(KeyCode.UpArrow) && knight.atGoal == true) {
+		if (UserControls.samePose(Pose.Fist) && knight.atGoal == true) {
 			if (pastVal == -1.0) {
 				pastVal = UserControls.getHeight ();
 			} else if (pastVal - UserControls.getHeight () > 0.4) {
 				lever.GetComponent<SpriteRenderer> ().color = new Color (0, 0, 255);
 				knight.winMove = true;
 			}
+			Debug.Log (pastVal);
+			Debug.Log (UserControls.getHeight());
             
 		} else {
 			pastVal = -1.0;
@@ -71,13 +73,13 @@ public class LeverHandler : MonoBehaviour {
         }
         if (knight.atGoal == true && knight.winMove == false)
         {
-            fistAnim.Play("Fist");
-            arrowAnim.Play("Arrow");
+            //fistAnim.Play("Fist");
+            //arrowAnim.Play("Arrow");
         }
         if(knight.winMove == true)
         {
-            fistAnim.Play("Fist_Idle");
-            arrowAnim.Play("Arrow_Idle");
+            //fistAnim.Play("Fist_Idle");
+            //arrowAnim.Play("Arrow_Idle");
         }
     }
 

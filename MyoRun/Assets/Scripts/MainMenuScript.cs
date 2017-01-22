@@ -9,9 +9,7 @@ public class MainMenuScript : MonoBehaviour {
 	public int PORT = 8080;
 
 	public void NewGame(string newGameLevel){
-		if (Network.peerType == NetworkPeerType.Disconnected) {
-			Network.InitializeServer (2, PORT);
-		}
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("LeverScene");
 	}
 	public void SpectateGame() {
 		if (Network.peerType == NetworkPeerType.Disconnected && !(Network.peerType == NetworkPeerType.Server)) {

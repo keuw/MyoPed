@@ -21,6 +21,7 @@ public class Socket : MonoBehaviour
     void Update()
     {
 		
+		SendToServer ("stuff: {" + UserControls.downfist+ ", " + UserControls.upfist + "}");
     }
 
     void OnGUI()
@@ -28,7 +29,7 @@ public class Socket : MonoBehaviour
         //if connection has not been made, display button to connect
         if (myTCP.socketReady == false)
         {
-            if (GUILayout.Button("Connect"))
+			if (GUILayout.Button("Connect", GUILayout.Height(250), GUILayout.Width(250)))
             {
                 //try to connect
                 Debug.Log("Attempting to connect..");

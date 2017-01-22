@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using Pose = Thalmic.Myo.Pose;
+
 public class Boss_Handler : MonoBehaviour
 {
     private float verticalSize;
@@ -39,14 +41,13 @@ public class Boss_Handler : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space))
         {
-            knightAnim.SetInteger("AnimationState", 2);
-            swordAnim.SetInteger("DropState", 1);
-            circleAnim.SetInteger("ExpandCircle", 1);
-            startEnding = true;
-            
-
+			knightAnim.SetInteger ("AnimationState", 2);
+			swordAnim.SetInteger ("DropState", 1);
+			circleAnim.SetInteger ("ExpandCircle", 1);
+			startEnding = true;
+			Debug.Log (UserControls.getHeight ());
         }
         if (startEnding)
         {
@@ -54,8 +55,11 @@ public class Boss_Handler : MonoBehaviour
 
         }
         if(endWait < 0)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Main Menu");
+		{
+			knightAnim.SetInteger("AnimationState", 0);
+			swordAnim.SetInteger("DropState", 0);
+			circleAnim.SetInteger("ExpandCircle", 0);
+			UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
     }
 
