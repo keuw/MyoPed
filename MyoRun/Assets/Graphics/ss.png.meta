@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: 7c8d5dc14fad30d4390fda47f53b8f7c
+timeCreated: 1485049591
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ss_0
+    21300002: ss_1
+    21300004: ss_2
+    21300006: ss_3
+    21300008: ss_4
+    21300010: ss_5
+    21300012: ss_6
+    21300014: ss_7
+    21300016: ss_8
+    21300018: ss_9
+    21300020: ss_10
+    21300022: ss_11
+    21300024: ss_12
+    21300026: ss_13
+    21300028: ss_14
+    21300030: ss_15
+    21300032: ss_16
+    21300034: ss_17
+    21300036: ss_18
+    21300038: ss_19
+    21300040: ss_20
+    21300042: ss_21
+    21300044: ss_22
+    21300046: ss_23
+    21300048: ss_24
+    21300050: ss_25
+    21300052: ss_26
+    21300054: ss_27
+    21300056: ss_28
+    21300058: ss_29
+    21300060: ss_30
+    21300062: ss_31
+    21300064: ss_32
+    21300066: ss_33
+    21300068: ss_34
+    21300070: ss_35
+    21300072: ss_36
+    21300074: ss_37
+    21300076: ss_38
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ss_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2508
+        width: 512
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2593
+        width: 589
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_2
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 2508
+        width: 559
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_3
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 2593
+        width: 616
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_4
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 2659
+        width: 465
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_5
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 2509
+        width: 531
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_6
+      rect:
+        serializedVersion: 2
+        x: 3992
+        y: 2572
+        width: 538
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_7
+      rect:
+        serializedVersion: 2
+        x: 4705
+        y: 2578
+        width: 571
+        height: 835
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_8
+      rect:
+        serializedVersion: 2
+        x: 5364
+        y: 2509
+        width: 823
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1962
+        width: 211
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1968
+        width: 205
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_11
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 2098
+        width: 263
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_12
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1980
+        width: 314
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_13
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 2264
+        width: 166
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_14
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 1892
+        width: 531
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_15
+      rect:
+        serializedVersion: 2
+        x: 3992
+        y: 1892
+        width: 514
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_16
+      rect:
+        serializedVersion: 2
+        x: 4621
+        y: 1892
+        width: 513
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_17
+      rect:
+        serializedVersion: 2
+        x: 5270
+        y: 1868
+        width: 520
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_18
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 2017
+        width: 220
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1995
+        width: 184
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_20
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 2013
+        width: 234
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_21
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 2007
+        width: 217
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_22
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 2010
+        width: 205
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_23
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1482
+        width: 202
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_24
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1427
+        width: 837
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_25
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 1445
+        width: 326
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_26
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 1421
+        width: 338
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_27
+      rect:
+        serializedVersion: 2
+        x: 4738
+        y: 1688
+        width: 79
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_28
+      rect:
+        serializedVersion: 2
+        x: 4859
+        y: 1669
+        width: 37
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_29
+      rect:
+        serializedVersion: 2
+        x: 4935
+        y: 1669
+        width: 81
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_30
+      rect:
+        serializedVersion: 2
+        x: 5041
+        y: 1666
+        width: 87
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_31
+      rect:
+        serializedVersion: 2
+        x: 5158
+        y: 1678
+        width: 118
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_32
+      rect:
+        serializedVersion: 2
+        x: 5315
+        y: 1672
+        width: 99
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_33
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1485
+        width: 223
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_34
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 527
+        width: 1623
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_35
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 968
+        width: 1235
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_36
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 527
+        width: 1630
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_37
+      rect:
+        serializedVersion: 2
+        x: 4720
+        y: 533
+        width: 97
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ss_38
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 322
+        width: 2881
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
