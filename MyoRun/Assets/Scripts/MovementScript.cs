@@ -17,11 +17,14 @@ public class MovementScript : MonoBehaviour {
 
     private Rigidbody2D rig;
     private Collider2D playerCollider;
+
+    private Animator playerAnimator;
     // Use this for initialization
 
     void Start () {
 		rig = GetComponent<Rigidbody2D> ();
         playerCollider = GetComponent<Collider2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -31,13 +34,16 @@ public class MovementScript : MonoBehaviour {
 		ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo> ();
 
         rig.velocity = new Vector2(speed, rig.velocity.y);
-		if (Input.GetKeyDown(KeyCode.UpArrow) || thalmicMyo.pose == Pose.DoubleTap)
+		if (Input.GetKeyDown(KeyCode.UpArrow) )
         {
             if (grounded)
             {
                 rig.velocity = new Vector2(rig.velocity.x, jumpPower);
             }
         }
+
+        playerAnimator.SetFloat("Speed", rig.velocity.x);
+        playerAnimator.SetBool("Grounded", grounded);
       
     }
 
