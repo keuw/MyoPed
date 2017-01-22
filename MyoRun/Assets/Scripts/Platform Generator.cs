@@ -21,8 +21,6 @@ public class PlatformGenerator : MonoBehaviour {
         if(transform.position.x < generationPoint.position.x)
         {
             transform.position = new Vector3(transform.position.x + platformWidth + distanceBetween, transform.position.y, transform.position.z);
-
-            Instantiate(thePlatform, transform.position, Transform.rotation);
         }
 	}
 }
