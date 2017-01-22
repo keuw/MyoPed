@@ -17,6 +17,9 @@ public class Boss_Handler : MonoBehaviour
     private Animator swordAnim;
     private Animator circleAnim;
 
+    private bool startEnding = false;
+    private float endWait = 5;
+
     public bool win;
     
 
@@ -38,10 +41,21 @@ public class Boss_Handler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            knightAnim.SetInteger("JumpState", 1);
+            knightAnim.SetInteger("AnimationState", 2);
             swordAnim.SetInteger("DropState", 1);
             circleAnim.SetInteger("ExpandCircle", 1);
+            startEnding = true;
             
+
+        }
+        if (startEnding)
+        {
+            endWait -= Time.deltaTime;
+
+        }
+        if(endWait < 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Main Menu");
         }
     }
 
