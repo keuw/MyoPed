@@ -10,15 +10,15 @@ public class GameHandler : MonoBehaviour {
     public Knight knight;
     public Lever lever;
     public Bridge bridge;
-    private Animator bridgeAnim;
+    public Fist fist;
+    public Arrow arrow;
 
+    private Animator bridgeAnim;
+    private Animator fistAnim;
+    private Animator arrowAnim;
 
     public bool win;
 
-    public int animationState = 0;
-
-
-    public int eventSet = 0;
     // Use this for initialization
     void Start () {
         win = false;
@@ -27,6 +27,8 @@ public class GameHandler : MonoBehaviour {
         horizontalSize = verticalSize * Screen.width / Screen.height;
 
         bridgeAnim = bridge.GetComponent<Animator>();
+        fistAnim = fist.GetComponent<Animator>();
+        arrowAnim = arrow.GetComponent<Animator>();
 
         for (int i = 0; i < 20; i++)
         {
@@ -57,6 +59,16 @@ public class GameHandler : MonoBehaviour {
         if (knight.playerTrans.position.x >= 10)
         {
             win = true;
+        }
+        if (knight.atGoal == true && knight.winMove == false)
+        {
+            fistAnim.Play("Fist");
+            arrowAnim.Play("Arrow");
+        }
+        if(knight.winMove == true)
+        {
+            fistAnim.Play("Fist_Idle");
+            arrowAnim.Play("Arrow_Idle");
         }
     }
 

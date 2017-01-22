@@ -8,7 +8,7 @@ public class Knight : MonoBehaviour {
     public bool atGoal;
     public bool winMove;
 
-    public float enterWait = 3;
+    public float enterWait = 2;
 
     // Use this for initialization
     void Start () {
